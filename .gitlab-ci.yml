@@ -1,0 +1,8 @@
+stages:
+  - test
+
+unit_tests:
+  stage: test
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --verbosity quiet

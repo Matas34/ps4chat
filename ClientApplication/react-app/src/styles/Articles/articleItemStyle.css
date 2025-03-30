@@ -1,0 +1,103 @@
+.article-item {
+    background: #242f3a; /* Left-to-right gradient */
+    background-size: cover; /* Ensures the gradient covers the entire area */
+    background-repeat: no-repeat; /* Prevents the gradient from repeating */
+    background-attachment: fixed; /* Makes sure the gradient doesn't scroll with content */
+    border: 0px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-item .clickable-row {
+    text-decoration: none; /* Removes any text decoration from links */
+    color: inherit; /* Inherits text color */
+}
+
+.article-item .clickable-row:hover {
+    background: #374858; /* Change the background on hover */
+}
+
+.article-item h2, .article-item p {
+    margin: 0; /* Adjust margin to control spacing */
+}
+
+.article-item .col {
+    flex-grow: 1; /* Allows the column to take up the remaining space */
+    flex-shrink: 1; /* Prevents the column from shrinking too much */
+    flex-basis: 0; /* Makes sure it can expand to fill the container */
+    min-width: 0; /* Allows proper shrinking of overflowing content */
+}
+
+
+.article-item h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.article-item .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.article-item .col {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.article-item .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.article-item .col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.article-item .col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.article-item b {
+    font-weight: bold;
+}
+
+.article-item hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    
+    margin: 10px 0;
+}
+
+.article-item p {
+    font-size: 16px;
+    color: #d9d9d9;
+    line-height: 1.5;
+}
+
+.article-item a {
+    color: #271496;
+    text-decoration: none;
+}
+
+
+
+.wrap-title, .wrap-category {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+
+.wrap-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

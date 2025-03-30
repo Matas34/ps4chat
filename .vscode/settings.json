@@ -1,0 +1,3 @@
+{
+    "dotnet-test-explorer.testProjectPath": "Backend/Tests/Unit/Unit.sln"
+}

@@ -1,0 +1,49 @@
+.chart-container svg text {
+    fill: white;
+    font-size: 12px;
+  }
+  
+  .chart-container svg text.axis-label {
+    font-size: 14px;
+  }
+  
+  .chart-container svg line {
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+  
+  .chart-container svg path {
+    stroke: var(--color-purple-light);
+    stroke-width: 2; 
+  }
+  
+.css-1x2wln8-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-tickLabel {
+  fill: white !important; 
+}
+
+.css-1x2wln8-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-line,
+.css-175e1i1-MuiChartsAxis-root-MuiChartsYAxis-root .MuiChartsAxis-line {
+  stroke: white !important; 
+}
+
+.css-1x2wln8-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-tick,
+.css-175e1i1-MuiChartsAxis-root-MuiChartsYAxis-root .MuiChartsAxis-tickLabel {
+  fill: white !important; 
+}
+
+.css-5ykkx-MuiMarkElement-root{
+  fill: var(--color-yellow) !important;
+}
+
+
+.css-1x2wln8-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-label{
+  fill: white !important;
+}
+
+.css-175e1i1-MuiChartsAxis-root-MuiChartsYAxis-root .MuiChartsAxis-label{
+  fill: white !important;
+}
+
+.css-195sd4n-MuiChartsGrid-line{
+  stroke: rgba(255, 255, 255, 0.2) !important;
+
+}

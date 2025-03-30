@@ -1,0 +1,293 @@
+{
+    "languages": {
+        "en": "Englisch",
+        "lt": "Litauisch",
+        "de": "Deutsch"
+    },
+    
+    "homepage" : {
+        "home" : "Zur Hauptseite",
+        "about" : "Über uns",
+        "logOut" : "Log out",
+        "goToCategories" : "Zu den Kategorien",
+        "goToArticles" : "Zum Artikel",
+        "goToExercise" : "Zu den Übungen",
+        "flashingSentence" : "Es war einmal ein Mädchen, dem war die Mutter gestorben. Ihre neue Stiefmutter hatte zwei Töchter mit ins Haus gebracht und sie waren alle sehr gemein zu ihr. Sie musste den ganzen Tag schwer arbeiten, früh aufstehen, Wasser tragen, Feuer machen, kochen und waschen. Abends, wenn sie müde war, musste sie sich neben den Herd in die Asche legen. Und weil sie darum immer staubig und schmutzig war, nannten sie es Aschenputtel. Es begab sich, daß der König ein großes Fest veranstaltete, auf dem sich der Prinz eine Gemahlin aussuchen sollte. Aschenputtel bat die Stiefmutter, sie möchte ihm erlauben hinzugehen. „Aschenputtel,“ antwortete die Stiefmutter, „du bist voll Staub und Schmutz und willst zum Fest? Du darfst nicht mit, denn du hast keine prächtigen Kleider.“ Darauf eilte sie mit ihren stolzen Töchtern fort. Aschenputtel ging zum Grab ihrer Mutter und weinte bis die Tränen darauf herniederfielen. Als sie die Augen wieder öffnete, trug sie plötzlich ein prächtiges Kleid und goldene Schuhe. So ging es zum Fest und der Prinz tanzte mit ihr. Als es Abend war, wollte Aschenputtel fort, der Prinz wollte sie begleiten, aber sie entsprang ihm so geschwind, daß er nicht folgen konnte. Auf der Treppe verlor sie einen ihrer Schuhe. Der Prinz fand den Schuh und sprach: „Keine andere soll meine Gemahlin werden, als die, an deren Fuß dieser goldene Schuh paßt.“ Und er ließ im ganzen Königreich nach dem Mädchen suchen, der der Schuh passte. Als er zu ihrem Hause kam, da passte der Schuh wie angegossen. Und als Aschenputtel sich in die Höhe richtete und dem Prinzen ins Gesicht sah, da erkannte er sie. Und sie lebten glücklich alle Tage."
+    },
+
+    "aboutPage": {
+        "title": "Über uns",
+        "introPart1": "In einer Welt mit \"etwa",
+        "introPart2": "einzigartigen Büchern im Jahr 2023\" (ISBNDB) und mit UNESCO, die berichtet, dass",
+        "million": "Millionen",
+        "introPart3": "mehr jedes Jahr veröffentlicht werden, ist es leicht, sich entmutigt zu fühlen, ein sinnvolles Leseziel zu erreichen – sagen wir, mindestens 300 Bücher in einem Leben.",
+        "toQuote": "Um",
+        "quoteAuthor": "Justin Hammond",
+        "quote": "Das erste und wichtigste Prinzip des Schnelllesens ist, dass es eine erlernbare Fähigkeit ist – keine angeborene Eigenschaft.",
+        "teamIntroduction": "Unser Team glaubte, dass wir etwas dagegen tun könnten. Deshalb haben wir eine Anwendung entwickelt, die Ihnen helfen soll, Ihre Leseerwartungen zu übertreffen, indem Sie Ihre Lesegeschwindigkeit verbessern.",
+        "meetTeam": "Lernen Sie unser starkes Team kennen:",
+        "teamList": {
+            "tadasDescription": "Full-Stack-Entwickler",
+            "dariusDescription": "Backend-Entwickler",
+            "arnasDescription": "Backend-Entwickler",
+            "adrianDescription": "Frontend-Entwickler"
+        },
+        "conclusion": "Wir hoffen, dass unsere Anwendung Ihnen nicht nur hilft, Ihre gewünschte Lesegeschwindigkeit zu erreichen, sondern auch Ihr Wissen in verschiedenen Bereichen erweitert.",
+        "happyReading": "Viel Spaß beim Lesen!"
+    },
+
+
+    "articleManagment" : {
+        "articleHomePage" : "Zur Haupseite des Artikel",
+        "createArticle" : "Artikel zumachen",
+        "createParagraph" : "Absatz zumachen",
+        "createQuestion" : "Frage zumachen",
+        "articleList" : "Artikelliste",
+        "userArticles" : "Artikelliste"
+    },
+
+    "categories" : {
+        "categories" : "Kategorien",
+        "returnToCategories" : "Zurück zu den Kategorien",
+        "createCategory" : "Kategorie erstellen",
+        "subjects" : "Themen",
+        "biology" : "Biologie",
+            "bCategories" : "Pflanzen, Moleküle, Tiere",
+        "astronomy" : "Astronomie",
+            "aCategories" : "Milchstraße, nächsteSternbilder, Schwarzen Loche",
+        "history" : "Geschichte",
+            "hCategories" : "Altes Ägypten, Mittelalter, Erste Weltkrieg, Zweite Weltkrieg",
+        "literature" : "Literatur",
+            "lCategories" : "William Shakespeare, Alexandre Dumas, Victor Hugo",
+
+        "categoryName": "Kategoriename",
+        "enterCategoryName": "Kategoriename eingeben",
+        "plsEnterCategoryName": "Bitte Kategoriename eingeben",
+        "categoryContent": "Kategorieinhalt",
+        "enterCategoryContent": "Kategorieinhalt eingeben",
+        "plsEnterCategoryContent": "Bitte Kategorieinhalt eingeben",
+
+        "chooseCategories" : "Wählen Sie aus, was Sie interesieren, oder erstellen Sie einigene Kategorien",
+        "search" : {
+            "searchCategories" : "Kategorien suchen",
+            "enterCategoryTitle" : "Geben Sie den Kategorietitel ein"
+        },
+
+        "myCategories" : "Erstelle meine eigene Kategorie"
+    },
+
+    "editPages" : {
+        "all" : {
+            "editAll" : "Alles redigieren",
+            "parUnavailable" : "Das Bearbeiten oder Erstellen von Absätzen ist nicht möglich",
+            "questUnavailable" : "Das Bearbeiten oder Erstellen von Fragen ist nicht möglich",
+            "resetArticle" : "Artikel zurücksetzen",
+            "resetParagraph" : "Absatz zurücksetzen",
+            "resetQuestion" : "Frage zurücksetzen",
+            "parsUnavailable" : "Artikelen nicht verfügbare",
+            "questionsUnavailable" : "Fragen nicht verfügbare"
+        },
+        "paragraphs" : {
+            "editParAndQ" : "Redigieren Absätyen und Fragen",
+            "qEditingorCreating" : "Das Bearbaiten oder Erstellen von Frage is nicht möglich",
+            "resetQuest" : "Frage zurücksetzen",
+            "questUnavailable" : "Fragen nicgt verfügbare"
+        },
+        "questions" : {
+            "editQuestion" : "Frage redigieren"
+        }
+    },
+
+    "exercise" : {
+        "loading" : "Lädt",
+        "reading" : {
+            "endOfParagraph" : "Ende des Absatzes",
+            "pressStartToBeginPar" : "Drücken Sie \"Beginnen\" um zu beginnen",
+            "start" : "Beginnen",
+            "goToQuestion" : "Zum Fragen"
+        },
+        "question" : {
+            "submitAnswer" : "Antwort abschicken"
+        },
+        "message" : {
+            "nextParagraph" : "Nächsten Absatz",
+            "finish" : "Enden",
+            "correct" : "Richtig",
+            "incorrect" : "Falsch! Das richtige antwort war"
+        },
+        "articleInfo" : {
+            "title" : "Der titel",
+            "author" : "Der Autor",
+            "publisher" : "Der Herausgeber",
+            "link" : "Die URL",
+            "addedBy" : "Added by"
+        },
+        "results" : {
+            "exerciseCompleted" : "Übung abgeschlossen",
+            "resultsInner" : "die Ergebnisse",
+            "paragraphNr" : "Absatznummer",
+            "words" : "Wörter",
+            "time" : "Zeit",
+            "questions" : "Fragen",
+            "inConclusion" : "Insgesamt ",
+            "yourCurrentReadingSpeed" : "Deine aktuelle Lesegeschwindigkeit",
+            "yourAverageReadingSpeedDuringExercise" : "Deine durchschnittliche Lesegeschwindigkeit während der Übung",
+            "goBackToCategories" : "Zurück zu den Kategorien"
+        }
+    },
+
+
+    "paragraphs" : {
+        "search" : {
+            "searchPar" : "Absatz suchen",
+            "enterParTitle" : "Geben Sie den Absatztitel ein",
+            "plsSelectPar" : "Geben Sie bitte den Absatztitel ein"
+        },
+        "createEdit" : {
+            "articleID" : "Artikelnummer",
+            "enterArticleID" : "Geben sie das Artikelnummer ein",
+            "plsEnterArticleID" : "Geben Sie bitte das Artikelnummer ein",
+            "parTitle" : "Absatztitel",
+            "enterParTitle" : "Geben Sie bitte den Absatztitel",
+            "plsEnterValidParTitle" : "Bitte geben Sie einen gültigen Absatztitel ein (nur Buchstaben und Leerzeichen)",
+            "paragraphText" : "Absatztext",
+            "eneterParText" : "Geben Sie den Absatztext ein",
+            "plsEnterParText" : "Bitte geben Sie einen Absatztext zwischen 10 und 1500 Zeichen ein"
+        }
+    },
+
+    "articles" : {
+"createEdit": {
+    "articleTitle": "Artikeltitel",
+    "enterArticleTitle": "Geben Sie den Artikeltitel ein",
+    "plsEnterArticleTitle": "Geben Sie bitte den Artikeltitel ein",
+    "articleCategory": "Artikelkategorie",
+    "enterArticleCategory": "Geben Sie die Artikelkategorie ein",
+    "plsEnterArticleCategory": "Geben Sie bitte die Artikelkategorie ein",
+    "articleAuthor": "Autor",
+    "enterAuthor": "Geben Sie den Vor- und Nachnamen des Autors ein",
+    "plsEnterAuthor": "Geben Sie bitte den Vor- und Nachnamen des Autors ein",
+    "articlePublisher": "Herausgeber",
+    "enterPublisher": "Geben Sie den Herausgeber ein",
+    "plsEnterPublisher": "Geben Sie bitte den Herausgeber ein",
+    "articleLink": "URL",
+    "enterLink": "Geben Sie die URL des Artikels ein",
+    "plsEnterLink": "Geben Sie bitte eine gültige URL ein",
+    "articleLanguage": "Sprache des Artikels",
+    "selectArticleLanguage": "Wählen Sie die Sprache des Artikels",
+    "plsSelectArticleLanguage": "Wählen Sie bitte die Sprache des Artikels"
+},
+
+        "returnToArticlesBtn" : {
+            "main" : "Zurück"
+        },
+        "search" : {
+            "enterArticleTitle" : "Geben Sie den Artikeltitel ein",
+            "searchArticles" : "Artikel suchen",
+            "plsSelectArticle" : "Wählen Sie bitte den Artikel"
+        },
+        "item" : {
+            "read" : "Lesen"
+        }
+    },
+
+    "questions" : {
+        "createEdit" : {
+            "paragraphID" : "Absatznummer", 
+            "enterParagraphID" : "Geben sie das Absatznummer ein",
+            "plsEnterParagraphID" : "Geben Sie bitte das Absatznummer ein",
+            "questionText" : "Fragentext",
+            "eneterQuestionText" : "Geben Sie den Fragentext ein",
+            "plsEnterQuestionText" : "Geben Sie bitte den Fragentext ein",
+            "addAnswer" : "Antwort hinzufügen"
+        },
+        "answerItem" : {
+            "answer" : "Antwort",
+            "enterAnswer" : "Geben Sie die Antwort ein",
+            "plsEnterAnswer" : "Geben Sie bitte die Antwort ein",
+            "correct" : "Richtig",
+            "delete" : "Löschen"
+        },
+        "search" : {
+            "searchQuestions" : "Suchen Fragen",
+            "enterQuestionsTitle" : "Geben Sie den Fragentext ein",
+            "plsSelectQuestion" : "Wählen Sie bitte eine Frage"
+        }
+    },
+
+    "commonUIelements" : {
+        "update": "Aktualisieren",
+        "create": "Erstellen",
+        "resetImg" : "Bild zurücksetzen",
+        "deleteImg" : "Bild löschen",
+        "wpm" : "WPM",
+        "select" : "Wählen",
+        "delete" : "Löschen",
+        "edit" : "Redigieren"
+    },
+
+    "signup": {
+        "signUp": "Registriieren",
+    
+        "username": "Benutzername",
+        "enterUsername": "Geben Sie die Benutzername ein",
+        "plsEnterUsername": "Geben Sie, bitte, die Benutzername ein",
+        
+        "email": "Email",
+        "enterEmail": "Geben Sie die Email ein",
+        "plsEnterValidEmail": "Geben Sie, bitte, eine gültige Email ein",
+        
+        "password": "Passwort",
+        "enterPassword": "Geben Sie das Passwort ein",
+        "plsEnterPassword": "Geben Sie, bitte, das Passwort ein",
+        
+        "passwordRepeat": "Wiederholen Sie das Passwort",
+        "_comment": "WTH Is the thing above 'password repeat'???",
+        "repeatPassword": "Wiederholen Sie das Passwort",
+        "plsRepeatPassword": "Wiederholen Sie, bitte, das Passwort",
+        
+        "passwordsDoNotMatch": "Passwörter sind nicht gleich",
+        
+        "profilePicture": "Profilbild",
+        "optional" : "fakulativ",
+    
+        "successMessage": "Sie haben sich erfolgreich angemeldet!",
+        
+        "plsFillAllFields": "Füllen Sie, bitte, alle erforderlichen Felder aus.",
+        "errorOccurred": "Ein Fehler ist aufgetreten. Versuchen Sie, bitte, es erneut.",
+    
+        "alreadyHaveAnAccount" : "Sie haben bereits ein Profil",
+        "logIn" : "Anmelden"
+      
+    },
+    
+    "login": {
+        "logIn": "Anmelden",
+        "email": "Email",
+        "enterEmail": "Geben Sie die Email ein",
+        "plsEnterValidEmail": "Geben Sie, bitte, eine gültige Email ein",
+    
+        "password": "Passwort",
+        "enterPassword": "Geben Sie das Passwort ein",
+        "plsEnterPassword": "Geben Sie, bitte, das Passwort ein",
+    
+        "successMessage": "Sie haben sich erfolgreich angemeldet",
+    
+        "dontHaveAnAccount": "Sie haben kein Profil",
+    
+        "errorOccurred": "Ein Fehler ist aufgetreten. Versuchen Sie, bitte, es erneut.",
+
+        "signUp": "Registrieren"
+    },
+
+    "searchArticle" : "Artikel suchen...",
+
+    "profile" : {
+        "personalStatystics" : "Persönliche Statistiken",
+        "wpm" : "WPM",
+        "averageReadingSpeed": "Durchschnittliche Lesegeschwindigkeit diesen Monat",
+        "answerCorrectnessThisMonth" : "Antwortgenauigkeit diesen Monat",
+        "lastExerciseAverageReadingSpeed" : "Durchschnittliche Lesegeschwindigkeit der letzten Übung",
+        "lastExerciseAnswerCorrectness" : "Antwortgenauigkeit der letzten Übung"
+    }
+}

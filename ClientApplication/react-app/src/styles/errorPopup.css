@@ -1,0 +1,12 @@
+.error-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffb4bb;
+    border: 1px solid #ffb4bb;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,158 @@
+.category-home-page {
+    padding: 20px 0;
+}
+
+.category-home-page h2{
+    color: #ffffff;
+    font-size: 35px !important;
+    margin-top: 20px !important;
+    /*margin-bottom: 20px !important;*/
+    text-align: center;
+}
+
+.rowCategories {
+    margin-bottom: 20px;
+}
+
+.categories{
+   font-size: 22px;
+   margin-top: 10px;
+}
+
+.mb-4 {
+    margin-bottom: 0.3rem !important;
+}
+
+
+.wrap-category {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+
+.wrap-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.category-item h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+.category-item p {
+    font-size: 16px;
+    color: #d9d9d9;
+    line-height: 1.5;
+}
+
+.category-item .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+
+/* General styles for category-item */
+.category-item {
+    background: var(--color-dark);
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.category-item:hover {
+    box-shadow: 0 0 15px var(--color-light), 0 0 20px var(--color-light);
+}
+
+/* Define styles for each color category */
+.category-item.red {
+    --color-dark: var(--color-red-dark);
+    --color-light: var(--color-red-light);
+}
+
+.category-item.pink {
+    --color-dark: var(--color-pink-dark);
+    --color-light: var(--color-pink-light);
+}
+
+.category-item.purple {
+    --color-dark: var(--color-purple-dark);
+    --color-light: var(--color-purple-light);
+}
+
+.category-item.deepPurple {
+    --color-dark: var(--color-deepPurple-dark);
+    --color-light: var(--color-deepPurple-light);
+}
+
+.category-item.indigo {
+    --color-dark: var(--color-indigo-dark);
+    --color-light: var(--color-indigo-light);
+}
+
+.category-item.blue {
+    --color-dark: var(--color-blue-dark);
+    --color-light: var(--color-blue-light);
+}
+
+.category-item.lightBlue {
+    --color-dark: var(--color-lightBlue-dark);
+    --color-light: var(--color-lightBlue-light);
+}
+
+.category-item.cyan {
+    --color-dark: var(--color-cyan-dark);
+    --color-light: var(--color-cyan-light);
+}
+
+.category-item.teal {
+    --color-dark: var(--color-teal-dark);
+    --color-light: var(--color-teal-light);
+}
+
+.category-item.green {
+    --color-dark: var(--color-green-dark);
+    --color-light: var(--color-green-light);
+}
+
+.category-item.lightGreen {
+    --color-dark: var(--color-lightGreen-dark);
+    --color-light: var(--color-lightGreen-light);
+}
+
+.category-item.lime {
+    --color-dark: var(--color-lime-dark);
+    --color-light: var(--color-lime-light);
+}
+
+.category-item.yellow {
+    --color-dark: var(--color-yellow-dark);
+    --color-light: var(--color-yellow-light);
+}
+
+.category-item.amber {
+    --color-dark: var(--color-amber-dark);
+    --color-light: var(--color-amber-light);
+}
+
+.category-item.orange {
+    --color-dark: var(--color-orange-dark);
+    --color-light: var(--color-orange-light);
+}
+
+.category-item.deepOrange {
+    --color-dark: var(--color-deepOrange-dark);
+    --color-light: var(--color-deepOrange-light);
+}
+

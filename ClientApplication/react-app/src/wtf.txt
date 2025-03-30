@@ -1,0 +1,12 @@
+//setup.jest.js
+import { TextDecoder, TextEncoder } from 'util';
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+
+import { mswServer } from './_tests/.mocks/msw-server';
+
+beforeAll(() => mswServer.listen());
+afterEach(() => mswServer.resetHandlers());
+afterAll(() => mswServer.close());
+
+

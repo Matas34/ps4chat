@@ -1,0 +1,3 @@
+Task id - 1, add info on commits, tasks, started work on alpha, beta, final versions, nicer looking readme.md => 3h
+Task id - 1, added UML diagrams, program structure diagram, created a logo => 2h
+Task id - 4, creating UI => 2h 2024-09-18 20-22h

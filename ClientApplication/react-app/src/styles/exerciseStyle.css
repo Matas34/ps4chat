@@ -1,0 +1,37 @@
+.exerciseWindow {
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e13;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.singleWord {
+    font-size: 40px;
+    color: white;
+    margin: 0;            /* Remove default margins */
+    width: 100%;          /* Allow text-align to work */
+    text-align: center;   /* Center text horizontally */
+}
+
+.yellowCircle {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1 / 1; /* Enforces equal width and height */
+    border-radius: 50%;
+    background-color: #ffeb3b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
+    color: #0e0e13;
+    font-size: 1.5rem; /* Make the number larger */
+    margin-right: 10px;
+}
+
+.questionContainer{
+    height: 100% !important;
+}

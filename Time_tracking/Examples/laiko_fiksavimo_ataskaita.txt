@@ -1,0 +1,22 @@
+1) proof of concept sukūrimas => 6 - 7 h. (reikėjo šitą darbą taip pat sukurti kompiuterinės grafikos dalyko užduočiai).
+2) readme.md failo sukūrimas => 1 h.
+3) papildomos diagramos sukūrimas => 1 h.
+4) readme.md failo formatavimas => 30 min.
+5) demonstracinio video sukūrimas => ~3 h.
+6) flowchart sukūrimas => 30 min.
+7) mini pavyzdukas konsolėje => 15 min.
+Apie 6h 15 min
+
+Frontend:
+1) pradinio puslapio sukūrimas su button, slider, dropbox ir comment box => 4 h.
+2) sukūrimo laikrodžio ir kitų dalykų patobulinimas => 2 h.
+3) tekstūrų sukūrimas => 1 h.
+4) ikonų sukūrimas => 1 h.
+5) programos dizaino patobulinimas (close ir collapse mygtukai, panaikintas standartinis title programos virsuje) => 1 h.
+6) transparencijos pritaikymas => 30 min.
+7) antro lango sukūrimas su visiškai atskira gija => 2-3 h.
+8) frontendo ir backend'o integravimas => 2 h.
+9) readme.md failo papildymas su visomis ataskaitomis ir klasiu diagramomis => 1 h.
+Apie 14 h 30 min - 15 h 30 min
+
+Išviso 20 h 45 min - 21 h 45 min

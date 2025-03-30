@@ -1,0 +1,40 @@
+name: .NET
+
+env:
+  ACTIONS_RUNNER_DEBUG: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+
+on:
+  push:
+    branches: [ "main" ] # Change this to your branch name
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Change to project directory
+      run: cd Backend/Tests/Unit
+    - name: Restore dependencies
+      run: dotnet restore Backend/Tests/Unit/Unit.csproj # Replace with your actual .csproj path
+    - name: Build
+      run: dotnet build Backend/Tests/Unit/Unit.csproj --no-restore
+    - name: Test
+      run: dotnet test Backend/Tests/Unit/Unit.csproj --no-build --verbosity normal
+    - name: Dump Test Results
+      run: cat TestResults/*.trx
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: TestResults
+        path: TestResults
+    
+
