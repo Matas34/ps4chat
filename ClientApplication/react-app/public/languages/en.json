@@ -1,0 +1,294 @@
+{
+    "languages": {
+        "en": "English",
+        "lt": "Lithuanian",
+        "de": "German"
+    },
+
+    "homepage" : {
+        "home" : "Home",
+        "about" : "About",
+        "logOut" : "Log out",
+        "goToCategories" : "Go to Categories",
+        "goToArticles" : "Go to Articles",
+        "goToExercise" : "Go to Exercise",
+        "flashingSentence" : "Introducing our new web page \"Speedreader.com\", designed to help users read sentences quickly without being distracted by inner thoughts, boosting focus, improving comprehension, and saving time with faster reading speeds."
+    },
+
+    "aboutPage" : {
+        "title" : "About us",
+        "introPart1" : "In a world with \"roughly",
+        "introPart2" : "unique books as of 2023\" (ISBNDB), and with UNESCO reporting that",
+        "million" : "million",
+        "introPart3" : "more are published every year, it’s easy to feel discouraged about achieving a meaningful reading goal - say, at least 300 books in a lifetime.",
+        "toQuote" : "To quote",
+        "quoteAuthor" : "Justin Hammond",
+        "quote" : "The first and most powerful lesson of speed reading is that it is a skill to be learned – not an ability you’re born with.",
+        "teamIntroduction" : "Our team believed we could do something about it. That’s why we created an application designed to help you surpass your reading expectations by improving your reading speed.",
+        "meetTeam" : "Meet our strong team:",
+        "teamList" : {
+          "tadasDescription" : "Full-Stack Developer",
+          "dariusDescription" : "Backend Developer",
+          "arnasDescription" : "Backend Developer",
+          "adrianDescription" : "Frontend Developer"
+        },
+        "conclusion": "We hope our application not only helps you achieve your desired reading speed but also expands your knowledge across various fields.",
+        "happyReading": "Happy reading!"
+    },
+
+    "articleManagment" : {
+        "articleHomePage" : "Article Home Page",
+        "createArticle" : "Create Article",
+        "createParagraph" : "Create Paragraph",
+        "createQuestion" : "Create Question",
+        "articleList" : "Article list",
+        "userArticles" : "My articles"
+    },
+
+    "categories" : {
+        "categories" : "Categories",
+        "returnToCategories" : "Back to Categories",
+        "createCategory" : "Create Category",
+        "subjects" : "Subjects",
+        "biology" : "Biology",
+            "bCategories" : "Plants, molecules, animals",
+        "astronomy" : "Astronomy",
+            "aCategories" : "Milky Way Galaxy, Closest star systems, Black holes",
+        "history" : "History",
+            "hCategories" : "Ancient Egypt, Middle Ages, WW I, WW II",
+        "literature" : "Literature",
+            "lCategories" : "William Shakespeare, Alexandre Dumas, Victor Hugo",
+        
+        "categoryName" : "Category Name",
+        "enterCategoryName" : "Enter Category Name",
+        "plsEnterCategoryName" : "Please enter Category Name",
+        "categoryContent" : "Category Content",
+        "enterCategoryContent" : "Enter Category Content",
+        "plsEnterCategoryContent" : "Please enter Category Content",
+
+        "chooseCategories" : "Choose what intrests you or even create your own categories",
+        "search" : {
+            "searchCategories" : "Search categories",
+            "enterCategoryTitle" : "Enter category title"
+        },
+
+        "myCategories" : "Create my own category"
+    },
+
+    "editPages" : {
+        "all" : {
+            "editAll" : "Edit All",
+            "parUnavailable" : "Paragraph editing or creating unavailable",
+            "questUnavailable" : "Question editing or creating unavailable",
+            "resetArticle" : "Reset Article",
+            "resetParagraph" : "Reset Paragraph",
+            "resetQuestion" : "Reset Question",
+            "parsUnavailable" : "Paragraphs unavailable",
+            "questionsUnavailable" : "Questions unavailable"
+        },
+        "paragraphs" : {
+            "editParAndQ" : "Edit Paragraph and Question",
+            "qEditingorCreating" : "Question editing or creating unavailable",
+            "resetQuest" : "Reset Question",
+            "questUnavailable" : "Questions unavailable"
+        },
+        "questions" : {
+            "editQuestion" : "Edit Question"
+        }
+    },
+
+    "exercise" : {
+        "loading" : "Loading",
+        "reading" : {
+            "endOfParagraph" : "End of Paragraph",
+            "pressStartToBeginPar" : "Press Start to begin Paragraph",
+            "start" : "Start",
+            "goToQuestion" : "Go to question"
+        },
+        "question" : {
+            "submitAnswer" : "Submit answer"
+        },
+        "message" : {
+            "nextParagraph" : "Next paragraph",
+            "finish" : "Finish",
+            "correct" : "Correct",
+            "incorrect" : "Incorrect! The correct answer was"
+        },
+        "articleInfo" : {
+            "title" : "Title",
+            "author" : "Author",
+            "publisher" : "Publisher",
+            "link" : "Link",
+            "addedBy" : "Added by"
+        },
+        "results" : {
+            "exerciseCompleted" : "Exercise completed",
+            "resultsInner" : "Results",
+            "paragraphNr" : "Paragraph nr",
+            "words" : "Words",
+            "time" : "Time",
+            "questions" : "Questions",
+            "inConclusion" : "In conclusion",
+            "yourCurrentReadingSpeed" : "Your current reading speed",
+            "yourAverageReadingSpeedDuringExercise" : "Your average reading speed during exercise",
+            "goBackToCategories" : "Go back to Categories"
+        }
+    },
+
+
+    "paragraphs" : {
+        "search" : {
+            "searchPar" : "Search Paragraphs",
+            "enterParTitle" : "Enter paragraph title",
+            "plsSelectPar" : "Please select a paragraph"
+        },
+        "createEdit" : {
+            "articleID" : "Article ID",
+            "enterArticleID" : "Enter article ID",
+            "plsEnterArticleID" : "Please enter article ID",
+            "parTitle" : "Paragraph Title",
+            "enterParTitle" : "Enter Paragraph Title",
+            "plsEnterValidParTitle" : "Please enter a valid paragraph title (letters and spaces only)",
+            "paragraphText" : "Paragraph Text",
+            "eneterParText" : "Enter Paragraph Text",
+            "plsEnterParText" : "Please enter paragraph text between 10 and 1500 characters"
+        }
+    },
+
+"articles": {
+"createEdit": {
+    "articleTitle": "Article Title",
+    "enterArticleTitle": "Enter Article Title",
+    "plsEnterArticleTitle": "Please enter article title",
+    "articleCategory": "Article Category",
+    "enterArticleCategory": "Enter Article Category",
+    "plsEnterArticleCategory": "Please enter article category",
+    "articleAuthor": "Author",
+    "enterAuthor": "Enter Author Name and Surname",
+    "plsEnterAuthor": "Please enter author name and surname",
+    "articlePublisher": "Publisher",
+    "enterPublisher": "Enter Publisher Name",
+    "plsEnterPublisher": "Please enter publisher name",
+    "articleLink": "Link",
+    "enterLink": "Enter Article Link",
+    "plsEnterLink": "Please enter a valid link",
+    "articleLanguage": "Article Language",
+    "selectArticleLanguage": "Select Article Language",
+    "plsSelectArticleLanguage": "Please select an article language"
+},
+
+        "returnToArticlesBtn": {
+            "main": "Main"
+        },
+        "search": {
+            "enterArticleTitle": "Enter Article Title",
+            "searchArticles": "Search Articles",
+            "plsSelectArticle": "Please select an article"
+        },
+        "item": {
+            "read": "Read"
+        }
+    },
+
+    "questions" : {
+        "createEdit" : {
+            "paragraphID" : "Paragraph ID",
+            "enterParagraphID" : "Enter paragraph ID",
+            "plsEnterParagraphID" : "Please enter paragraph ID",
+            "questionText" : "Question Text",
+            "eneterQuestionText" : "Enter Question Text",
+            "plsEnterQuestionText" : "Please enter question text",
+            "addAnswer" : "Add answer"
+        },
+        "answerItem" : {
+            "answer" : "Answer",
+            "enterAnswer" : "Enter answer",
+            "plsEnterAnswer" : "Please enter an answer",
+            "correct" : "Correct",
+            "delete" : "Delete"
+        },
+        "search" : {
+            "searchQuestions" : "Search Questions",
+            "enterQuestionsTitle" : "Enter question title",
+            "plsSelectQuestion" : "Please select a question"
+        }
+    },
+
+    "commonUIelements" : {
+        "update" : "Update",
+        "create" : "Create",
+        "resetImg" : "Reset image",
+        "deleteImg" : "Delete image",
+        "wpm" : "WPM",
+        "select" : "Select",
+        "delete" : "Delete",
+        "edit" : "Edit"
+    },
+
+
+  "signup": {
+    "signUp": "Sign up",
+
+    "username": "Username",
+    "enterUsername": "Enter Username",
+    "plsEnterUsername": "Please enter Username",
+    
+    "email": "Email",
+    "enterEmail": "Enter Email",
+    "plsEnterValidEmail": "Please enter a valid Email address",
+    
+    "password": "Password",
+    "enterPassword": "Enter Password",
+    "plsEnterPassword": "Please enter Password",
+    
+    "passwordRepeat": "Password repeat",
+    "repeatPassword": "Repeat Password",
+    "plsRepeatPassword": "Please repeat your Password",
+    
+    "passwordsDoNotMatch": "Passwords do not match",
+    
+    "profilePicture": "Profile Picture",
+    "optional" : "optional",
+
+    "successMessage": "You have successfully signed up!",
+    
+    "plsFillAllFields": "Please fill all required fields",
+    "errorOccurred": "An error occurred. Please try again.",
+
+    "alreadyHaveAnAccount" : "Already have an account",
+    "logIn" : "Log in"
+  
+},
+
+"login": {
+    "logIn": "Log in",
+    "email": "Email",
+    "enterEmail": "Enter Email",
+    "plsEnterValidEmail": "Please enter a valid email address",
+
+    "password": "Password",
+    "enterPassword": "Enter Password",
+    "plsEnterPassword": "Please enter your Password",
+
+    "successMessage": "You have successfully logged in!",
+
+    "dontHaveAnAccount": "Don't have an account",
+
+    "errorOccurred": "An error occurred. Please try again.",
+
+    "signUp": "Register"
+  },
+
+  "searchArticle" : "Search articles...",
+
+  "profile" : {
+    "personalStatystics" : "Personal statistics",
+    "wpm" : "WPM",
+    "averageReadingSpeed": "Average reading speed this month",
+    "answerCorrectnessThisMonth" : "Answer correctness this month",
+    "lastExerciseAverageReadingSpeed" : "Last exercise average reading speed",
+    "lastExerciseAnswerCorrectness" : "Last exercise answer correctness"
+  }
+  
+}
+

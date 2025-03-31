@@ -1,0 +1,381 @@
+:root {
+  --color-red-light: #ff4569;
+  --color-red: #ff1744;
+  --color-red-dark:#b2102f;
+
+  --color-pink-light: #f73378;
+  --color-pink: #f50057;
+  --color-pink-dark:#ab003c;
+
+  --color-purple-light: #dd33fa;
+  --color-purple: #d500f9;
+  --color-purple-dark:#9500ae;
+  
+  --color-deepPurple-light: #834bff;
+  --color-deepPurple: #651fff;
+  --color-deepPurple-dark:#4615b2;
+
+  --color-indigo-light: #637bfe;
+  --color-indigo: #3d5afe;
+  --color-indigo-dark:#2a3eb1;
+
+  --color-blue-light: #5393ff;
+  --color-blue: #2979ff;
+  --color-blue-dark:#1c54b2;
+
+  --color-lightBlue-light: #33bfff;
+  --color-lightBlue: #00b0ff;
+  --color-lightBlue-dark: #007bb2;
+
+  --color-cyan-light: #33eaff;
+  --color-cyan: #00e5ff;
+  --color-cyan-dark:#00a0b2;
+
+  --color-teal-light: #4aedc4;
+  --color-teal: #1de9b6;
+  --color-teal-dark:#14a37f;
+
+  --color-green-light: #33eb91;
+  --color-green: #00e676;
+  --color-green-dark:#00a152;
+
+  --color-lightGreen-light: #91ff35;
+  --color-lightGreen: #76ff03;
+  --color-lightGreen-dark:#52b202;
+
+  --color-lime-light: #d1ff33;
+  --color-lime: #c6ff00;
+  --color-lime-dark:#8ab200;
+
+  --color-yellow-light: #ffee33;
+  --color-yellow: #ffea00;
+  --color-yellow-dark:#b2a300;
+
+  --color-amber-light: #ffcf33;
+  --color-amber: #ffc400;
+  --color-amber-dark:#b28900;
+
+  --color-orange-light: #ffa733;
+  --color-orange: #ff9100;
+  --color-orange-dark:#b26500;
+
+  --color-deepOrange-light: #ff6333;
+  --color-deepOrange: #ff3d00;
+  --color-deepOrange-dark:#b22a00;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+
+body {
+  background: linear-gradient(0deg, #1E1B20, #18151A); /* Your gradient */
+  background-size: cover; /* Ensures the gradient covers the entire area */
+  background-repeat: no-repeat; /* Prevents the gradient from repeating */
+  background-attachment: fixed; /* Makes sure the gradient doesn't scroll with content */
+  font-family: 'Fredoka', sans-serif;
+  min-height: 100vh; /* Ensures the body covers the viewport height */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.subjectButtons{
+  width: 100%;
+}
+
+.subjectButtons:hover {
+  filter: brightness(120%);
+}
+
+.siteName {
+  font-size: 35px;
+  margin-left: 20px;
+  color: #e6e6ff;
+}
+
+.App {
+  text-align: center;
+}
+
+.icons{
+  margin-top: -3px;
+}
+
+.mainContainer {
+  color: white;
+  font-size: 17px;
+  background-color: #212529;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.form-control.darkInput {
+  background-color: #16161d !important; /* Force the background to be dark */
+  color: #d9d9d9 !important; /* Force text color to be white */
+  border: 1px solid #2c2c3a !important;
+}
+
+.form-control.darkInput:focus,
+.form-control.darkInput:hover,
+.form-control.darkInput:active {
+  background-color: #21212c !important;
+  color: #f2f2f2 !important;
+  border: 0.5px solid #4d4d66 !important; /* Optional: change border color for better visibility */
+  outline: none !important; /* Remove default blue outline on focus */
+}
+
+.darkInput::placeholder {
+  color: #666666; /* Change this color to whatever you prefer */
+  opacity: 1; /* Ensures the color is applied fully */
+}
+
+
+.form-label {
+  margin-bottom: .1rem;
+}
+
+.column-with-divider {
+  position: relative;
+}
+
+.column-with-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #404040 ; /* Adjust color as needed */
+}
+
+.last-column::before {
+  display: none; /* Remove divider for the last column */
+}
+
+
+.buttons {
+  width: 100%;
+  transition: box-shadow 0.2s ease-in-out;
+  color: var(--color-white);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+
+.buttons:hover {
+  box-shadow: 0 0 15px var(--hover-color),
+              0 0 20px var(--hover-color);
+}
+
+
+.buttons:active,
+.buttons:focus {
+  background-color: var(--background-color) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color, var(--color-white)) !important;
+  outline: none;
+}
+
+.buttons.red {
+  --background-color: var(--color-red-dark);
+  --border-color: var(--color-red-dark);
+  --hover-color: var(--color-red-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.pink {
+  --background-color: var(--color-pink-dark);
+  --border-color: var(--color-pink-dark);
+  --hover-color: var(--color-pink-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.purple {
+  --background-color: var(--color-purple-dark);
+  --border-color: var(--color-purple-dark);
+  --hover-color: var(--color-purple-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.deepPurple {
+  --background-color: var(--color-deepPurple-dark);
+  --border-color: var(--color-deepPurple-dark);
+  --hover-color: var(--color-deepPurple-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.indigo {
+  --background-color: var(--color-indigo-dark);
+  --border-color: var(--color-indigo-dark);
+  --hover-color: var(--color-indigo-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.blue {
+  --background-color: var(--color-blue-dark);
+  --border-color: var(--color-blue-dark);
+  --hover-color: var(--color-blue-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.lightBlue {
+  --background-color: var(--color-lightBlue-dark);
+  --border-color: var(--color-lightBlue-dark);
+  --hover-color: var(--color-lightBlue-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.cyan {
+  --background-color: var(--color-cyan-dark);
+  --border-color: var(--color-cyan-dark);
+  --hover-color: var(--color-cyan-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.teal {
+  --background-color: var(--color-teal-dark);
+  --border-color: var(--color-teal-dark);
+  --hover-color: var(--color-teal-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.green {
+  --background-color: var(--color-green-dark);
+  --border-color: var(--color-green-dark);
+  --hover-color: var(--color-green-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.lightGreen {
+  --background-color: var(--color-lightGreen-dark);
+  --border-color: var(--color-lightGreen-dark);
+  --hover-color: var(--color-lightGreen-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.lime {
+  --background-color: var(--color-lime-dark);
+  --border-color: var(--color-lime-dark);
+  --hover-color: var(--color-lime-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.yellow {
+  --background-color: var(--color-yellow-dark);
+  --border-color: var(--color-yellow-dark);
+  --hover-color: var(--color-yellow-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.amber {
+  --background-color: var(--color-amber-dark);
+  --border-color: var(--color-amber-dark);
+  --hover-color: var(--color-amber-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.orange {
+  --background-color: var(--color-orange-dark);
+  --border-color: var(--color-orange-dark);
+  --hover-color: var(--color-orange-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.buttons.deepOrange {
+  --background-color: var(--color-deepOrange-dark);
+  --border-color: var(--color-deepOrange-dark);
+  --hover-color: var(--color-deepOrange-light);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: #212529;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  color: #d9d9d9;
+  font-size: 18px;
+  border-right: 1px solid #2c2c3a;
+}
+
+.search-bar-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #d9d9d9;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.search-bar-container input::placeholder {
+  color: #666666;
+}

@@ -1,0 +1,1 @@
+public record PageResponse<T>(long Count, List<T> Items) where T : class;

@@ -1,0 +1,15 @@
+.create-article-page {
+    padding: 20px 0;
+}
+
+.create-article-page h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input {
+    margin-bottom: 17px;
+}

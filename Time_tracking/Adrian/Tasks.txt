@@ -1,0 +1,2 @@
+- Reading all Tadas additions to the repository, minor changes to README.md => 1h
+- Visualising the ideas of how the application could look => 2h

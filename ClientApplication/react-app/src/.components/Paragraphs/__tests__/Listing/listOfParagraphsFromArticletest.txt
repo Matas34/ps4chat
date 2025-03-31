@@ -1,0 +1,105 @@
+// import React from 'react';
+// import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+// import listOfParagraphs from '../../Listing/listOfParagraphsFromArticle';
+// import { ArticleController, ParagraphController } from '../../../../.controllers/articleController'; 
+
+// jest.mock('../../../../.controllers/articleController', () => ({
+//   ArticleController: {
+//     Get: jest.fn().mockResolvedValueOnce({ paragraphIDs: [1, 2] }),
+//   },
+//   ParagraphController: {
+//     Get: jest.fn()
+//       .mockResolvedValueOnce({ id: 1, title: 'Paragraph 1' }) 
+//       .mockResolvedValueOnce({ id: 2, title: 'Paragraph 2' }), 
+//     Delete: jest.fn().mockResolvedValueOnce(), 
+//   },
+// }));
+
+// jest.mock('react-i18next', () => ({
+//   useTranslation: () => ({ t: (key) => key }),
+// }));
+
+// describe('listOfParagraphs', () => {
+//   const mockGetSelected = jest.fn();
+//   const mockUpdate = jest.fn();
+//   const mockSettings = {
+//     showSelectButton: true,
+//     showDeleteButton: true,
+//     showEditButton: true,
+//   };
+
+//   beforeEach(() => {
+//     // Reset mock functions before each test
+//     jest.clearAllMocks();
+//   });
+
+//   test('renders the paragraphs correctly', async () => {
+//     render(<listOfParagraphs articleId={1} getSelected={mockGetSelected} update={mockUpdate} settings={mockSettings} />);
+
+//     await waitFor(() => {
+//       expect(screen.getByText('Paragraph 1')).toBeInTheDocument();
+//       expect(screen.getByText('Paragraph 2')).toBeInTheDocument();
+//     });
+//   });
+
+//   test('pagination works correctly', async () => {
+//     render(<listOfParagraphs articleId={1} getSelected={mockGetSelected} update={mockUpdate} settings={mockSettings} />);
+
+//     await waitFor(() => {
+//       expect(screen.getByText('Paragraph 1')).toBeInTheDocument();
+//     });
+
+//     fireEvent.click(screen.getByTestId('pagination-next'));
+
+//     await waitFor(() => {
+//       expect(ArticleController.Get).toHaveBeenCalledTimes(2);
+//     });
+//   });
+
+//   test('displays error modal when there is an error fetching paragraphs', async () => {
+//     const errorMessage = 'Error fetching paragraphs';
+//     ArticleController.Get.mockRejectedValueOnce(new Error(errorMessage));
+
+//     render(<listOfParagraphs articleId={1} getSelected={mockGetSelected} update={mockUpdate} settings={mockSettings} />);
+
+//     await waitFor(() => {
+//       expect(screen.getByText('commonUIelements.select')).toBeInTheDocument();
+//     });
+
+//     expect(screen.getByText(errorMessage)).toBeInTheDocument();
+//   });
+
+//   test('displays error modal when there is an error deleting a paragraph', async () => {
+//     const errorMessage = 'Error deleting paragraph';
+//     ParagraphController.Delete.mockRejectedValueOnce(new Error(errorMessage));
+
+//     render(<listOfParagraphs articleId={1} getSelected={mockGetSelected} update={mockUpdate} settings={mockSettings} />);
+
+//     fireEvent.click(screen.getAllByText('commonUIelements.delete')[0]);
+
+//     fireEvent.click(screen.getByText('commonUIelements.delete'));
+
+//     expect(screen.getByText(errorMessage)).toBeInTheDocument();
+//   });
+
+//   test('calls delete function and shows delete popup', async () => {
+//     render(<listOfParagraphs articleId={1} getSelected={mockGetSelected} update={mockUpdate} settings={mockSettings} />);
+
+//     fireEvent.click(screen.getAllByText('commonUIelements.delete')[0]);
+
+//     expect(screen.getByText('Are you sure you want to delete this paragraph?')).toBeInTheDocument();
+//   });
+
+//   test('deletes paragraph successfully when confirmed', async () => {
+//     render(<listOfParagraphs articleId={1} getSelected={mockGetSelected} update={mockUpdate} settings={mockSettings} />);
+
+//     fireEvent.click(screen.getAllByText('commonUIelements.delete')[0]);
+
+//     fireEvent.click(screen.getByText('commonUIelements.delete'));
+
+//     await waitFor(() => {
+//       expect(ParagraphController.Delete).toHaveBeenCalledWith(1);
+//       expect(screen.queryByText('Are you sure you want to delete this paragraph?')).not.toBeInTheDocument(); // Ensure the popup is closed
+//     });
+//   });
+// });

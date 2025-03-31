@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist", // Use a dedicated folder for output files
+      "jsx": "react-jsx", // or "react" for older React versions
+      "allowJs": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "target": "ES6"
+    },
+    "include": ["src/**/*", "src/_tests/.mocks/msw-server.js"],
+    "exclude": ["node_modules", "dist"]
+  }
+  

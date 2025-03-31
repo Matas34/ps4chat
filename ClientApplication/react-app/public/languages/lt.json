@@ -1,0 +1,297 @@
+{
+    "languages": {
+        "en": "Anglų",
+        "lt": "Lietuvių",
+        "de": "Vokiečių"
+    },
+
+    "homepage": {
+        "home": "Namai",
+        "about": "Apie mus",
+        "logOut" : "Atsijungti",
+        "goToCategories": "Eiti į Ketegorijos",
+        "goToArticles": "Eiti į Straipsniai",
+        "goToExercise": "Eiti į Užduotis",
+        "flashingSentence": "Pristatome mūsų naują internetinį puslapį \"Speedreader.com\", kuris padeda atsikratyti vidinio monologo skaitant. Šalia to, puslapis siekia pagerinti skaitytojo tekstų supratimą bei skaitytojo dėmesingumą. O svarbiausia - naudojantis šia svetaine, žmonės tiesiog sutaupys laiko skaitydami greičiau."
+    },
+
+    "aboutPage": {
+        "title": "Apie mus",
+        "introPart1": "Pasaulyje, kuriame yra \"apytinksliai",
+        "introPart2": "unikalių knygų iki 2023 m.\" (ISBNDB), o UNESCO praneša, kad",
+        "million": "milijonų",
+        "introPart3": "daugiau knygų išleidžiama kasmet, dažnu atveju gali nusvirti rankos norint pasiekti bent daugiau mažiau prasmingą tikslą - per gyvenimą perskaityti, pvz., 300 knygų.",
+        "toQuote": "Cituojant",
+        "quoteAuthor": "Justin Hammond",
+        "quote": "Pirmoji ir galingiausia greito skaitymo pamoka - tai yra įgūdis, kurį galima išmokti, o ne gebėjimas, su kuriuo tik gimstama.",
+        "teamIntroduction": "Mūsų komanda tikėjo, kad galime sukurti kažką prasmingo šioje srityje. Todėl sukūrėme svetainę, kuri skirta padėti viršyti skaitymo lūkesčius, gerinant skaitymo greitį.",
+        "meetTeam": "Mūsų stipri komanda:",
+        "teamList": {
+          "tadasDescription": "Full-Stack programuotojas",
+          "dariusDescription": "Backend programuotojas",
+          "arnasDescription": "Backend programuotojas",
+          "adrianDescription": "Frontend programuotojas"
+        },
+        "conclusion": "Tikimės, kad mūsų programa ne tik pagelbės pasiekti norimą skaitymo greitį, bet ir padės praplėsti žinias įvairiose srityse.",
+        "happyReading": "Linksmo skaitymo!"
+    },
+
+    "articleManagment" : {
+        "articleHomePage" : "Straipsnių puslapis",
+        "createArticle" : "Sukurti straipsnį",
+        "createParagraph" : "Sukurti pastraipą",
+        "createQuestion" : "Sukurti klausimą",
+        "articleList" : "Straipsnių sąrašas",
+        "userArticles" : "Mano straipsniai"
+    },
+
+    "categories" : {
+        "categories" : "Kategorijos",
+        "returnToCategories" : "Atgal į kategorijas",
+        "createCategory" : "Sukuri kategoriją",
+        "subjects" : "Dalykai",
+        "biology" : "Biologija",
+            "bCategories" : "Augalai, molekulės, gyvūnai",
+        "astronomy" : "Astronomija",
+            "aCategories" : "Paukščių Takas, Arčiausios žvaigždžių sistemos, Juodosios skylės",
+        "history" : "Istorija",
+            "hCategories" : "Senovės Egiptas, Viduramžiai, PK I, PK II",
+        "literature" : "Literatūra",
+            "lCategories" : "Viljemas Šekspyras, Aleksandras Diuma, Viktoras Hugo",
+        
+        "categoryName" : "Kategorijos pavadinimas",
+        "enterCategoryName" : "Įveskite kategorijos pavadinimą",
+        "plsEnterCategoryName" : "Prašome įvesti kategorijos pavadinimą",
+        "categoryContent" : "Kategorijos turinys",
+        "enterCategoryContent" : "Įveskite kategorijos turinį",
+        "plsEnterCategoryContent" : "Prašome įvesti kategorijos turinį",
+
+        "chooseCategories" : "Pasirinkite, kas domina, arba kurkite savo kategorijas",
+        "search" : {
+            "searchCategories" : "Ieškoti kategorijų",
+            "enterCategoryTitle" : "Įveskite kategorijos pavadinimą"
+        },
+
+        "myCategories" : "Kurti savo kategoriją"
+    },
+
+    "editPages" : {
+        "all" : {
+            "editAll" : "Visko redagavimas",
+            "parUnavailable" : "Pastraipos redagavimas arba kūrimas negalimas",
+            "questUnavailable" : "Klausimų redagavimas arba kūrimas negalimas",
+            "resetArticle" : "Atnaujinti straipsnį",
+            "resetParagraph" : "Atnaujinti pastraipą",
+            "resetQuestion" : "Atnaujinti klausimą",
+            "parsUnavailable" : "Pastraipos neprieinamos",
+            "questionsUnavailable" : "Klausimai neprieinami"
+        },
+        "paragraphs" : {
+            "editParAndQ" : "Pastraipų ir klausimų redagavimas",
+            "qEditingorCreating" : "Klausimų redagavimas arba kūrimas negalimas",
+            "resetQuest" : "Atnaujinti klausimą",
+            "questUnavailable" : "Klausimai neprieinami"
+        },
+        "questions" : {
+            "editQuestion" : "Klausimų redagavimas"
+        }
+    },
+
+    "exercise" : {
+        "loading" : "Kraunama",
+
+        "reading" : {
+            "endOfParagraph" : "Baigta Pastraipa",
+            "pressStartToBeginPar" : "Spauskite Pradėti, kad startuotumėte Pastraipą",
+            "start" : "Pradėti",
+            "goToQuestion" : "Eiti prie klausimo"
+        },
+        
+        "question" : {
+            "submitAnswer" : "Pateikti atsakymą"
+        },
+
+        "message" : {
+            "nextParagraph" : "Kita pastraipa",
+            "finish" : "Finišuoti",
+            "correct" : "Teisingai",
+            "incorrect" : "Neteisingai! Tesingas atsakymas buvo"
+        },
+
+        "articleInfo" : {
+            "title" : "Pavadinimas",
+            "author" : "Autorius",
+            "publisher" : "Leidėjas",
+            "link" : "Nuoroda",
+            "addedBy" : "Pridėjo"
+        },
+
+        "results" : {
+            "exerciseCompleted" : "Užduotis baigta",
+            "resultsInner" : "Rezultatai",
+            "paragraphNr" : "Pastraipos nr",
+            "words" : "Žodžiai",
+            "time" : "Laikas",
+            "questions" : "Klausimai",
+            "inConclusion" : "Apibendrinimas",
+            "yourCurrentReadingSpeed" : "Jūsų dabartinis skaitymo greitis",
+            "yourAverageReadingSpeedDuringExercise" : "Jūsų skaitymo greitis pratimo metu",
+            "goBackToCategories" : "Eiti atgal prie Katekorijų"
+        }
+    },
+    
+    "paragraphs" : {
+        "search" : {
+            "searchPar" : "Ieškoti pastraipų",
+            "enterParTitle" : "Įveskite pastraipos pavadinimą",
+            "plsSelectPar" : "Prašome pasirinkti pastraipą"
+        },
+        "createEdit" : {
+            "articleID" : "Straipsnio ID",
+            "enterArticleID" : "Įveskite straipsnio ID",
+            "plsEnterArticleID" : "Prašome įvesti straipsnio ID",
+            "parTitle" : "Pastraipos pavadinimas", 
+            "enterParTitle" : "Įveskite pastraipos pavadinimą",
+            "plsEnterValidParTitle" : "Prašome įvesti teisingą pastraipos pavadinimą (tik raidės ir tarpai)",
+            "paragraphText" : "Pastraipos tekstas", 
+            "eneterParText" : "Įveskite pastraipos tekstą",
+            "plsEnterParText" : "Prašome įvesti pastraipos tekstą ilgio nuo 10 iki 1500 simbolių"
+        }
+    },
+
+    "articles" : {
+"createEdit": {
+    "articleTitle": "Straipsnio pavadinimas",
+    "enterArticleTitle": "Įveskite straipsnio pavadinimą",
+    "plsEnterArticleTitle": "Prašome įvesti straipsnio pavadinimą",
+    "articleCategory": "Straipsnio kategorija",
+    "enterArticleCategory": "Įveskite straipsnio kategoriją",
+    "plsEnterArticleCategory": "Prašome įvesti straipsnio kategoriją",
+    "articleAuthor": "Autorius",
+    "enterAuthor": "Įveskite autoriaus vardą ir pavardę",
+    "plsEnterAuthor": "Prašome įvesti autoriaus vardą ir pavardę",
+    "articlePublisher": "Leidėjas",
+    "enterPublisher": "Įveskite leidėjo pavadinimą",
+    "plsEnterPublisher": "Prašome įvesti leidėjo pavadinimą",
+    "articleLink": "Nuoroda",
+    "enterLink": "Įveskite straipsnio nuorodą",
+    "plsEnterLink": "Prašome įvesti nuorodą",
+    "articleLanguage": "Straipsnio kalba",
+    "selectArticleLanguage": "Pasirinkite straipsnio kalbą",
+    "plsSelectArticleLanguage": "Prašome pasirinkti straipsnio kalbą"
+},
+
+
+        "returnToArticlesBtn" : {
+            "main" : "Pagrindinis"
+        },
+        "search" : {
+            "enterArticleTitle" : "Įveskite straipsnio pavadinimą",
+            "searchArticles" : "Ieškoti straipsnių",
+            "plsSelectArticle" : "Prašome pasirinkti straipsnį"
+        },
+        "item" : {
+            "read" : "Skaityti"
+        }
+    },
+    
+    "questions" : {
+        "createEdit" : {
+            "paragraphID" : "Pastraipos ID",
+            "enterParagraphID" : "Įveskite pastraipos ID",
+            "plsEnterParagraphID" : "Prašome įvesti pastripos ID",
+            "questionText" : "Klausimo tekstas",
+            "eneterQuestionText" : "Įveskite klausimo tekstą",
+            "plsEnterQuestionText" : "Prašome įvesti klausimo tekstą",
+            "addAnswer" : "Pridėti atsakymą"
+        },
+        "answerItem" : {
+            "answer" : "Atsakymas",
+            "enterAnswer" : "Įveskite atsakymą",
+            "plsEnterAnswer" : "Prašome įvesti atsakymą",
+            "correct" : "Teisingas",
+            "delete" : "Panaikinti"
+        },
+        "search" : {
+            "searchQuestions" : "Iesškoti klausimų",
+            "enterQuestionsTitle" : "Įveskite klausimo pavadinimą",
+            "plsSelectQuestion" : "Prašome pasirinkti klausimą"
+        }
+    },
+
+    "commonUIelements" : {
+        "update": "Atnaujinti",
+        "create": "Sukurti",
+        "resetImg" : "Atstatyti paveikslėlį",
+        "deleteImg" : "Panaikinti paveikslėlį",
+        "wpm" : "WPM",
+        "select" : "Pasirinkti",
+        "delete" : "Panaikinti",
+        "edit" : "Redaguoti"
+    },
+
+    "signup": {
+        "signUp": "Registracija",
+    
+        "username": "Vartotojo vardas",
+        "enterUsername": "Įveskite vartotojo vardą",
+        "plsEnterUsername": "Prašome įvesti vartotojo vardą",
+        
+        "email": "Paštas",
+        "enterEmail": "Įveskite paštą",
+        "plsEnterValidEmail": "Prašome įvesti galiojantį pašto adresą",
+        
+        "password": "Slaptažodis",
+        "enterPassword": "Įveskite slaptažodį",
+        "plsEnterPassword": "Prašome įvesti slaptažodį",
+        
+        "passwordRepeat": "Slaptažodžio pakartojimas",
+        "repeatPassword": "Pakartokite slaptažodį",
+        "plsRepeatPassword": "Prašome pakartoti slaptažodį",
+        
+        "passwordsDoNotMatch": "Slaptažodžiai nesutampa",
+        
+        "profilePicture": "Profilio nuotrauka",
+        "optional" : "neprivaloma",
+    
+        "successMessage": "Jūs sėkmingai užsiregistravote!",
+        
+        "plsFillAllFields": "Prašome užpildyti visus privalomus laukelius",
+        "errorOccurred": "Įvyko klaida. Prašome dar kartą bandyti užsiregistruoti",
+    
+        "alreadyHaveAnAccount" : "Jau turite paskyrą",
+        "logIn" : "Prisijungti"
+      
+    },
+    
+    "login": {
+        "logIn": "Prisijungimas",
+
+        "email": "Paštas",
+        "enterEmail": "Įveskite paštą",
+        "plsEnterValidEmail": "Prašome įvesti galiojantį pašto adresą",
+    
+        "password": "Slaptažodis",
+        "enterPassword": "Įveskite slaptažodį",
+        "plsEnterPassword": "Prašome įvesti slaptažodį",
+    
+        "successMessage": "Sėkmingai prisijungėte!",
+    
+        "dontHaveAnAccount": "Dar neturite paskyros",
+    
+        "errorOccurred": "Įvyko klaida. Prašome dar kartą bandyti prisjungti",
+    
+        "signUp": "Registruotis"
+    },
+
+    "searchArticle" : "Ieškoti straipsnio...",
+
+    "profile" : {
+        "personalStatystics" : "Asmeninė statistika",
+        "wpm" : "ŽPM",
+        "averageReadingSpeed": "Vidutinis skaitymo greitis šį mėnesį",
+        "answerCorrectnessThisMonth" : "Atsakymų tesingumas šį mėnesį",
+        "lastExerciseAverageReadingSpeed" : "Paskutinės užduoties vidutinis skaitymo greitis",
+        "lastExerciseAnswerCorrectness" : "Paskutinės užduoties atsakymų tesingumas"
+    }
+}
