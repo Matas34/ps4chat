@@ -13,4 +13,7 @@ public interface IArticleService : IServiceWithImage<ArticleResponse>
     ArticleResponse RandomArticle();
     void DeleteArticle(int articleId);
     long GetCount();
+
+    public Task<List<long>> UsersWhoLikedArticle(int articleId);
+
 }

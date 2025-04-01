@@ -19,6 +19,7 @@ public class User
     public long ArticlesCountRead { get; set; } = 0;
 
 
+    public ICollection<Like> Likes { get; set; }
     public string? ImageFileName { get; set; }
     public string? ImageFilePath { get; set; }
     public MimeType? ImageMimeType { get; set; }

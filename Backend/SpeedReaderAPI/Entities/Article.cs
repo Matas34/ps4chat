@@ -26,8 +26,12 @@ public class Article : IComparable<Article>
     /// <deprecated>
     /// This property is deprecated. Use <see cref="NewCategoryTitle"/> instead.
     /// </deprecated>
-    /// 
+    ///
+    ///
 
+
+
+    public ICollection<Like> Likes { get; set; }
     public string? OriginalAuthor { get; set; }
     public string? CategoryTitle { get; set; }
     public string? Publisher { get; set; }
@@ -74,7 +78,7 @@ public class Article : IComparable<Article>
     public virtual ICollection<Category> Categories { get; set; }  = [];
 
 
-    [ForeignKey(nameof(User))]  
+    [ForeignKey(nameof(User))]
     public long UserId { get; set; }
     public virtual User? User { get; set; }
 

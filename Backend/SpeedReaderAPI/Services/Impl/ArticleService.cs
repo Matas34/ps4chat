@@ -7,7 +7,7 @@ using SpeedReaderAPI.Entities;
 using SpeedReaderAPI.Exceptions;
 using SpeedReaderAPI.helpers;
 namespace SpeedReaderAPI.Services.Impl;
-
+using Microsoft.EntityFrameworkCore;
 
 
 public class ArticleService : IArticleService
@@ -18,15 +18,17 @@ public class ArticleService : IArticleService
     private readonly IMapper _mapper;
     private readonly IAuthService _authService;
 
+    private readonly ApplicationContext _context_t;
     // Production constructor
     public ArticleService(ApplicationContext context, IMapper mapper,
-        IImageService imageService, IParagraphService paragraphService, IAuthService authService)
+        IImageService imageService, IParagraphService paragraphService, IAuthService authService, ApplicationContext context_t)
     {
         _context = new CombinedRepositories(context);
         _mapper = mapper;
         _imageService = imageService;
         _paragraphService = paragraphService;
         _authService = authService;
+        _context_t = context_t;
     }
 
     public ArticlePageResponse GetArticles(QueryParameters queryParameters)
@@ -184,6 +186,12 @@ public class ArticleService : IArticleService
         DetachCategoriesFromArticle(articleFound, removedCategoryIdsList);
         _context.Article.Remove(articleFound);
         _context.SaveChanges();
+
+
+        var likes = _context_t.Likes.Where(l => l.ArticleId == articleId).ToList();
+        _context_t.Likes.RemoveRange(likes);
+        _context_t.SaveChanges();
+
     }
 
     public PageResponse<ArticleResponse> SearchArticles(QueryParameters queryParameters)
@@ -265,4 +273,21 @@ public class ArticleService : IArticleService
     {
         return _context.Article.Count();
     }
+
+    public async Task<List<long>> UsersWhoLikedArticle(int articleId)
+    {
+        if (_context_t.Likes.Any(x => x.ArticleId == articleId))
+        {
+
+            var userIds = await _context_t.Likes
+                .Where(l => l.ArticleId == articleId)
+                .Select(l => l.UserId)
+                .ToListAsync();
+
+            return userIds;
+        }
+        return null;
+    }
+
+
 }

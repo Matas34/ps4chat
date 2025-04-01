@@ -126,7 +126,7 @@ try
     });
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
     builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
-    builder.Services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
+    builder.Services.AddCors(options => options.AddPolicy("AllowAll", p => p.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
 
 
 
@@ -177,6 +177,7 @@ try
     app.UseCors("AllowAll");
 
     app.UseRouting();
+    app.UseAuthentication();    //NEW AUTHENTICATION
 	app.UseAuthorization();
 
 	if (usePrometheus)

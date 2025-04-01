@@ -20,6 +20,8 @@ namespace SpeedReaderAPI.Data
         public DbSet<ArticleSession> ArticleSession { get; set; }
         public DbSet<ParagraphSession> ParagraphSession { get; set; }
 
+        public DbSet<Like> Likes { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -56,7 +58,7 @@ namespace SpeedReaderAPI.Data
 
             modelBuilder.Entity<ArticleSession>()
             .HasOne(a => a.User)
-            .WithMany() 
+            .WithMany()
             .HasForeignKey(a => a.UserId)
             .OnDelete(DeleteBehavior.Cascade);
 
@@ -78,6 +80,20 @@ namespace SpeedReaderAPI.Data
             .HasForeignKey(p => p.ParagraphId)
             .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<Like>()
+                .HasKey(l => new { l.UserId, l.ArticleId });
+
+            modelBuilder.Entity<Like>()
+                .HasOne(l => l.User)
+                .WithMany(u => u.Likes)
+                .HasForeignKey(l => l.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Like>()
+                .HasOne(l => l.Article)
+                .WithMany(a => a.Likes)
+                .HasForeignKey(l => l.ArticleId)
+                .OnDelete(DeleteBehavior.Restrict);
             base.OnModelCreating(modelBuilder);
         }
     }
