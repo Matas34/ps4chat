@@ -5,4 +5,5 @@ unit_tests:
   stage: test
   script:
     - cd .\Backend\Tests\Unit
+    - dotnet build
     - dotnet test --verbosity quiet
