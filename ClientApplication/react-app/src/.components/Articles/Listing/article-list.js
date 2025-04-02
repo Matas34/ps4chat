@@ -9,14 +9,14 @@ import { ArticleController } from '../../../.controllers/.MainControllersExport'
 import ErrorPopup from '../../.common-components/ErrorPopup';
 import { ThreeDots } from 'react-loader-spinner';
 import DeletePopup from '../../.common-components/DeletePopup';
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next';
 import { FaSearch } from "react-icons/fa";
 import { ArticleReadyForReading } from '../../../.helpers/ArticleReadyForReading';
 
 
 const ArticleList = ({ settings, getSelected, update, getEditing, getPlay, userId }) => {
     const { t } = useTranslation();
-   
+
     const [articles, setArticles] = useState(null)
     const [page, setPage] = useState(0)
     const [pageSize, setPageSize] = useState(0)
@@ -108,22 +108,22 @@ const ArticleList = ({ settings, getSelected, update, getEditing, getPlay, userI
 
     return (
         <>
-{settings && settings.showSearchBar && (
-    <div className="search-bar-container">
-        <div className="icon-box">
-            <FaSearch />
-        </div>
-        <input
-            type="text"
-            className="form-control darkInput"
-            placeholder={t('searchArticle')}
-            onChange={(e) => {
-                const searchTerm = e.target.value;
-                setSearchTerm(searchTerm);
-            }}
-        />
-    </div>
-)}
+            {settings && settings.showSearchBar && (
+                <div className="search-bar-container">
+                    <div className="icon-box">
+                        <FaSearch />
+                    </div>
+                    <input
+                        type="text"
+                        className="form-control darkInput"
+                        placeholder={t('searchArticle')}
+                        onChange={(e) => {
+                            const searchTerm = e.target.value;
+                            setSearchTerm(searchTerm);
+                        }}
+                    />
+                </div>
+            )}
 
 
 

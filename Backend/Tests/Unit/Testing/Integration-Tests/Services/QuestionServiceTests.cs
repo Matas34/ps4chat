@@ -76,7 +76,7 @@ public class QuestionServiceTests
         // Initialize ArticleService with mocks and context
         _articleService = new ArticleService(context, _mapper, 
                                              _imageService, 
-                                             _paragraphService, authService);
+                                             _paragraphService, authService,ContextCreator.CreateIsolatedContext());
 
 
         // Initialize ArticleService with mock data

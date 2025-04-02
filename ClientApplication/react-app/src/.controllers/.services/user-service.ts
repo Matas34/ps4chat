@@ -35,7 +35,7 @@ const UserService = {
         const requestOptions = FetchHelperAxios.generateRequestOptionsAxios("DELETE");
         const apiUrl = process.env.REACT_APP_API_URL + `Users/img`;
         return FetchHelperAxios.fetchEntityAxios(apiUrl, requestOptions).then(res => {return res});
-    }
+    },
 }
 
 export default UserService;

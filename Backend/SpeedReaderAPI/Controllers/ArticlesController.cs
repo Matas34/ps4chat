@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http.HttpResults;
+
 namespace SpeedReaderAPI.Controllers;
 
 using Microsoft.AspNetCore.Mvc;
@@ -108,4 +110,20 @@ public class ArticlesController : ControllerBase
         long count = _articleService.GetCount();
         return Ok(count);
     }
+
+    [HttpGet("usersWhoLikedTheArticle")]
+    //[Authorize(Roles = "USER,ADMIN")]
+    public async Task<IActionResult> usersWhoLikedTheArticle(int articleId)
+    {
+        var users = await _articleService.UsersWhoLikedArticle(articleId);
+
+        if (users != null)
+        {
+            return Ok(users);
+        }
+
+        return NotFound();
+    }
+
+
 }

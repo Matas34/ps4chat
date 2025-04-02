@@ -51,4 +51,38 @@ public class UsersController : ControllerBase
         return File(img.FileStream!, img.ImageMimeType.ToMimeString(), img.ImageFilePath);
     }
 
+    [HttpPost("ThumbsUp")]
+    [Authorize(Roles = "USER,ADMIN")]
+    public async Task <IActionResult> ThumbsUp(long userId, int articleId)
+    {
+        await _userService.ThumbsUp(userId, articleId);
+
+        return Ok();
+    }
+
+    [HttpPost("ThumbsDown")]
+    [Authorize(Roles = "USER,ADMIN")]
+    public async Task <IActionResult> ThumbsDown(long userId, int articleId)
+    {
+
+        await _userService.ThumbsDown(userId, articleId);
+
+        return Ok();
+    }
+
+    [HttpGet("LikedArticles")]
+    public async Task<IActionResult> LikedArticles(long userId)
+    {
+        var result = await _userService.LikedArticles(userId);
+
+        if (result != null)
+        {
+            return Ok(result);
+        }
+        return NotFound();
+    }
+
+
+
+
 }
