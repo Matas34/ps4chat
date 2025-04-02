@@ -69,7 +69,7 @@ public class ArticleSessionServiceTests
 
         ParagraphService paragraphService = new ParagraphService(context, _mapper, _imageService, questionService, authService);
 
-        ArticleService articleService = new ArticleService(context, _mapper, _imageService, paragraphService, authService);
+        ArticleService articleService = new ArticleService(context, _mapper, _imageService, paragraphService, authService,ContextCreator.CreateIsolatedContext());
 
         _paragraphSessionService = new ParagraphSessionService(context, _mapper);
         _articleSessionService = new ArticleSessionService(context, authService, _paragraphSessionService, _mapper);

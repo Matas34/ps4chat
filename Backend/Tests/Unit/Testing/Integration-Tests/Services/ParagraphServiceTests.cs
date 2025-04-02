@@ -73,7 +73,7 @@ public class ParagraphServiceTests
         // Initialize ArticleService with mocks and context
         _articleService = new ArticleService(context, _mapper,
                                              _imageService,
-                                             _paragraphService, authService);
+                                             _paragraphService, authService,ContextCreator.CreateIsolatedContext());
 
         // Initialize ArticleService with mock data
         var request = new ArticleCreateRequest("Test Article", "Test Category", null, null, null, null, null);
