@@ -15,6 +15,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using SpeedReaderAPI.Entities;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Override("Microsoft.AspNetCore.Hosting", LogEventLevel.Warning)
@@ -73,12 +74,29 @@ try
         }
     });
 
+
+
+
+/*// 3b) (If your React dev server is on localhost:3000) Allow CORS for websockets
+    builder.Services.AddCors(o => o.AddPolicy("CorsPolicy", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    }));*/
+
+
     // Service and Middleware setup
     builder.Services.AddControllers(options =>
         {
             options.Filters.Add<RequestValidationFilter>();
             options.Filters.Add<ExceptionFilter>();
         });
+    builder.Services.AddSingleton(new InMemoryChatHistory());
+    builder.Services.AddSingleton<IChatService, ChatService>();
+    builder.Services.AddSignalR();
     builder.Services.AddScoped<IImageService, ImageService>();
     builder.Services.AddScoped<IArticleService, ArticleService>();
     builder.Services.AddScoped<IParagraphService, ParagraphService>();
@@ -201,7 +219,7 @@ try
     }
 
     app.UseHttpsRedirection();
-
+    app.MapHub<ChatHub>("/chatHub");
     app.MapControllers();
     app.Run();
 
