@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fontsource/fredoka": "^5.1.0",
+    "@microsoft/signalr": "^8.0.7",
     "@mui/icons-material": "^6.1.5",
     "@mui/x-charts": "^7.23.1",
     "@testing-library/user-event": "^13.5.0",

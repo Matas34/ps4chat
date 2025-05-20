@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, {useState, useEffect, useMemo, useRef} from 'react';
 import '../../styles/exerciseStyle.css';
 import { QuestionComponent } from '../../.components/.MainComponentsExport';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,8 @@ import { ArticleController, ParagraphController, QuestionController } from '../.
 import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; 
 import { ThreeDots } from 'react-loader-spinner';
+import {UserManager} from "../../.controllers/.dataProcessingHelpers/DataProccessingHelpersExport";
+import * as signalR from "@microsoft/signalr";
 
 const Exercise = () => {
   const { t } = useTranslation();
@@ -50,6 +52,18 @@ const Exercise = () => {
   const [articleSession, setArticleSession] = useState(null); 
 
   const { avgReadingSpeed, worldRecordWPM, usersWPM } = exerciseInfo;
+
+  const [isChatVisible, setIsChatVisible] = useState(false);
+  const [newMessage, setNewMessage] = useState('');
+  const [messages, setMessages] = useState([]);
+  const hubConnection = useRef(null);
+
+  const [chatHistory] = React.useState([
+    { sender: "username", content: "test" },
+    { sender: "asd",      content: "test2" },
+    { sender: "asd",      content: "53454" },
+    { sender: "asd",      content: "asdasd 234234 sdsdf" }
+  ]);
 
   useEffect(() => {
     if (articleId) {
@@ -238,6 +252,61 @@ const Exercise = () => {
     }
   }, [articleCompleted]);
 
+  useEffect(() => {
+    const fetchMessages = async () => {
+
+      if (UserManager.getUser() === null) return;
+      
+      const response = await fetch(
+          `${process.env.REACT_APP_API_URL}chat/history`,
+          {
+            headers: {
+              'Authorization': `Bearer ${UserManager.getUser()._token}`,
+            },
+            credentials: 'include'
+          }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        setMessages(data.slice(-8).reverse());
+      }
+    };
+
+    fetchMessages();
+
+  }, []);
+
+
+  useEffect(() => {
+    
+    if (UserManager.getUser() === null) return;
+    
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl(`${process.env.REACT_APP_HUB_URL}`, {accessTokenFactory: () => UserManager.getUser()._token})
+        .withAutomaticReconnect()
+        .build();
+
+    connection.on("ReceiveMessage", (message) => {
+      setMessages((prev) => [message, ...prev].slice(0, 8));
+    });
+
+    connection
+        .start().catch((err) => {
+      console.error("SignalR Connection Error: ", err);
+    });
+
+    hubConnection.current = connection;
+
+    return () => {
+      if (hubConnection.current) {
+        hubConnection.current.stop()
+            .catch((err) => console.error("Error stopping connection:", err));
+      }
+    }
+
+  }, [])
+
   if (!articleData || paragraphs.length === 0 || questionsPerParagraph.length === 0) {
     return (
       <div style={{ display: 'flex', minHeight: '50vh', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
@@ -401,6 +470,7 @@ const Exercise = () => {
       }
     }
   };
+  
 
   if (articleCompleted) {
     return (
@@ -424,6 +494,34 @@ const Exercise = () => {
       </>
     );
   }
+  
+  const handleSendMessage = async () => {
+    if (!newMessage.trim()) return;
+
+    const user = UserManager.getUser();
+
+    const payload = {
+      sender: user._username,
+      content: newMessage
+    };
+
+      const response = await fetch(
+          `${process.env.REACT_APP_API_URL}chat/send`,
+          {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${user._token}`,
+              'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+            body: JSON.stringify(payload)
+          }
+      );
+
+    if (response.ok){
+      setNewMessage('');
+    }
+  }  
 
   return (
     <>
@@ -478,6 +576,27 @@ const Exercise = () => {
           paragraphs={paragraphs}
           handleNextParagraphOrQuestion={handleNextParagraphOrQuestion}
         />
+      )}
+      {UserManager.getUser() !== null && (
+      <button onClick={() => setIsChatVisible(!isChatVisible)} className="chatButton"> Chat </button>
+      )}
+
+      {isChatVisible && (
+          <div className="chatWindow">
+            <input value={newMessage} onChange={e => setNewMessage(e.target.value)} className="chatInput" placeholder="Enter message" maxLength={22}/>
+
+            {messages.map((message, idx) => (
+                <div 
+                    key={idx} 
+                    className={`message ${message.sender === UserManager.getUser()._username ? 'userMessage' : 'othersMessage'}`} 
+                    style={{ bottom: `${(idx + 1) * 60}px` }}>
+                  
+                  <strong>{message.sender}:</strong> {message.content}
+                </div>
+            ))}
+            
+            <button className="sendButton" onClick={handleSendMessage}>Send</button>
+          </div>
       )}
     </>
   );
