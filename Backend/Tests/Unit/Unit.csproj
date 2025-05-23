@@ -68,5 +68,5 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SpeedReaderAPI\SpeedReaderAPI.csproj" />
   </ItemGroup>
-
+  
 </Project>
