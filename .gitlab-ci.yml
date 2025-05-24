@@ -1,9 +1,132 @@
 stages:
-  - test
+  - build
+  - run tests
 
-unit_tests:
-  stage: test
+building:
+  stage: build
   script:
     - cd .\Backend\Tests\Unit
     - dotnet build
-    - dotnet test --verbosity quiet
+  artifacts:
+    paths:
+      - .\Backend\SpeedReaderAPI\bin\
+
+ArticleSessionService_GetAllByAuthenticatedUser:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "FullyQualifiedName~ArticleSessionServiceTests.GetAllByAuthenticatedUser_ShouldReturnValidResponse_WhenUserIsAuthenticated"
+  dependencies:
+    - building
+
+ArticleSessionService_CreateValidSession:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "FullyQualifiedName~ArticleSessionServiceTests.CreateArticleSession_ShouldCreateSession_AndUpdateUserStats"
+  dependencies:
+    - building
+
+ArticleSessionService_CreateInvalidSession:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "FullyQualifiedName~ArticleSessionServiceTests.CreateArticleSession_InvalidParagraphId"
+  dependencies:
+    - building
+
+ArticleSessionsController_CreateValidRequest:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "FullyQualifiedName~UnitTests.ArticleSessionsControllerTests.Create_ValidRequest_ReturnsOkResult"
+  dependencies:
+    - building
+
+Article_Creating:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Article creating"
+  dependencies:
+    - building
+
+Article_Updating:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Article updating"
+  dependencies:
+    - building
+
+Article_Deleting:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Article deleting"
+  dependencies:
+    - building
+
+Article_Searching:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Article searching"
+  dependencies:
+    - building
+
+Category_Creating:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Category creating"
+  dependencies:
+    - building
+
+Category_Updating:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Category updating"
+  dependencies:
+    - building
+
+Category_Deleting:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Category deleting"
+  dependencies:
+    - building
+
+Paragraph_Creating:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Paragraph creating"
+  dependencies:
+    - building
+
+Paragraph_Updating:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "DisplayName~Paragraph updating"
+  dependencies:
+    - building
+
+InitialDataTesting:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "FullyQualifiedName~Unit.InitialDataTesting"
+  dependencies:
+    - building
+
+SendMessage_Should_StoreAndBroadcast_AndTrimExcess:
+  stage: run tests
+  script:
+    - cd .\Backend\Tests\Unit
+    - dotnet test --filter "FullyQualifiedName~Unit.ChatServiceTests.SendMessage_Should_StoreAndBroadcast_AndTrimExcess"
+  dependencies:
+    - building
